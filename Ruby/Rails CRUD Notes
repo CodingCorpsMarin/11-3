@@ -1,0 +1,13 @@
+
+Competencies
+
+CRUD in Rails is similar to Sinatra
+Still have the same Create Read Update Delete actions
+But the routes are not in the controller, only the actions are
+
+Applications
+Utilize CRUD in Rails applications
+
+
+Resources:
+https://assist-software.net/snippets/ruby-rails-crud-and-api-tutorial
