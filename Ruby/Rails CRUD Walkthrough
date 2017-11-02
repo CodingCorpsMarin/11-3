@@ -1,0 +1,86 @@
+We'll make a CRUD app from scratch.
+
+Create a new rails app 
+>rails new [name]
+
+Go into your app directory
+>cd [name]
+
+Create controllers, the C in MVC
+>rails generate controller Posts 
+
+This creates a controller file, and a corresponding views folder
+
+Go into your newly created controller and create your first action: index
+>def index
+  end
+
+Now make a corresponding view file in the posts/views folder
+index.html.erb
+> <h1>Hello World</h1>
+
+Now create a route
+//in routes.rb
+resouces :posts
+
+This creates index, new, show, create, edit, update, and destroy routes
+
+Take a look
+>rails s
+
+Generate a model
+>rails generate model Post title:string content:text
+
+This creates our model and migration
+
+Migrate the DB
+>rails db:migrate
+
+Make some posts in the console
+>rails c
+
+>post = Post.new(title:'first post', content:'blahblahblah')
+// You can also use hashes for the attributes
+Save with post.save
+Also can create a post in one step with .create
+
+Can retrieve this post using .find. 
+>post = Post.find(1)
+
+Can update with .update_attribute and parameters to update
+>post.update_attribute(content:'new content')
+
+Destroy with .destroy
+>post.destroy
+
+Check routes 
+>rails routes
+
+This should show all your actions
+
+Create these actions in your controller
+>def show
+  end
+  def new
+  end
+  def create
+  end
+  def edit
+  end
+  def update 
+  end
+  def destroy
+  end
+
+Create corresponding views: show, new, edit in views/posts folder
+
+
+
+  
+
+
+
+
+
+
+
