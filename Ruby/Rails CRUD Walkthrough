@@ -15,13 +15,13 @@ Go into your newly created controller and create your first action: index
 >def index
   end
 
-Now make a corresponding view file in the posts/views folder
+Now make a corresponding view file in the views/posts folder
 index.html.erb
 > <h1>Hello World</h1>
 
 Now create a route
 //in routes.rb
-resouces :posts
+resources :posts
 
 This creates index, new, show, create, edit, update, and destroy routes
 
