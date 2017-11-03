@@ -6,6 +6,9 @@ Create a new rails app
 Go into your app directory
 >cd [name]
 
+Create DB
+>rails db:create
+
 Create controllers, the C in MVC
 >rails generate controller Posts 
 
