@@ -48,7 +48,7 @@ Can retrieve this post using .find.
 >post = Post.find(1)
 
 Can update with .update_attribute and parameters to update
->post.update_attribute(content:'new content')
+>post.update_attribute('content','new content')
 
 Destroy with .destroy
 >post.destroy
